@@ -1,0 +1,125 @@
+$breakpoint-movil: 600px;
+
+@media (max-width: $breakpoint-movil) {
+    /* Header content */
+    .box__principal{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .presentation {
+        margin: auto;
+        width: 100%;
+        p{
+            position: relative;
+            padding: 30px;
+            margin-top: 10px;
+        }
+        h1{
+            margin-top: 25px;
+        }
+        h1, h2{
+            font-size: 3em;
+            padding: 0;
+            text-align: center;
+        }
+        nav{
+            margin-top: 50px;
+            text-align: center;
+            ul{
+                padding: 0;
+                a{
+                    li{
+                        padding: 15px 25px;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    
+    .aud__img{
+        width: auto;
+        margin: 100px 30px;
+        img{
+            width: 325px;
+            height: 250px;
+        }
+    }
+
+    //* Content *//
+    .article2{
+        .content__txt{
+            width: 100%;
+        }
+    }
+    .content__column{
+        display: block;
+    }
+    .product1{
+        width: 200px;
+        height: 200px;
+    }
+
+    // category product
+    .content_category{
+        width: 100%;
+        display: block;
+        .category__product{
+            margin-bottom: 50px;
+        }
+    }
+    
+    //*  Support *//
+    .expert__sup{
+        background: linear-gradient(to bottom left,  $color-one, $color-four, $color-three);
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    
+    .sup__content{
+        display: block;
+        width: 100%;
+        padding: 0 10px;
+        margin: auto;
+        
+        .inform{
+            padding: 20px;
+        }
+        .support__img{
+            img{
+                width: 100%;
+                padding: 30px;
+            }
+        }
+    }
+
+    // Information additional
+
+    footer{
+        background: linear-gradient(to bottom left,  $color-four, $color-three, $color-one);
+        width: 100%;
+        height: 100vh;
+        padding-top: 10%;
+    }
+
+    .footer__contact{
+        display: block;
+        width: 100%;
+        padding: 30px;
+        .contact{
+            font-size: 2.5em;
+            padding: 10px;
+        }
+
+        .locate{
+            display: block;
+            padding: 10px;
+            .office, .media{
+                padding-bottom: 25px;
+            }
+        }        
+    }
+}
+
